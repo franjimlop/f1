@@ -1,0 +1,4959 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Setups F1 2025</title>
+  <link rel="icon" href="https://png.pngtree.com/png-clipart/20240607/original/pngtree-vector-silhouette-design-of-a-formula-1-car-png-image_15264086.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Setups <img src="images/logo_juego.png"></h1>
+    <div class="circuit-selector select-group">
+      <label for="circuito-select">Selecciona un circuito:</label>
+      <select id="circuito-select" onchange="mostrarCircuito(this.value)">
+        <option value="australia">Australia</option>
+        <option value="china">China</option>
+        <option value="japon">Japón</option>
+        <option value="barein">Baréin</option>
+        <option value="arabia">Arabia Saudí</option>
+        <option value="miami">Miami</option>
+        <option value="imola">Imola</option>
+        <option value="monaco">Mónaco</option>
+        <option value="españa">España</option>
+        <option value="canada">Canadá</option>
+        <option value="austria">Austria</option>
+        <option value="inglaterra">Gran Bretaña</option>
+        <option value="belgica">Bélgica</option>
+        <option value="hungria">Hungría</option>
+        <option value="holanda">Países Bajos</option>
+        <option value="monza">Monza</option>
+        <option value="baku">Azerbaiyán</option>
+        <option value="singapur">Singapur</option>
+        <option value="texas">Texas</option>
+        <option value="mexico">México</option>
+        <option value="brasil">Brasil</option>
+        <option value="vegas">Las Vegas</option>
+        <option value="catar">Catar</option>
+        <option value="abu">Abu Dabi</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section id="australia" class="circuit">
+      <div class="left">
+        <h2 class="circuit-title">Australia <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg"></h2>
+        <img class="circuit-map" src="images/australia.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-australia">Selección de setup o estrategia:</label>
+          <select id="setup-select-australia" onchange="mostrarContenido(this.value, 'australia')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="australia-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="australia-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="australia-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="australia-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="china" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">China <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/640px-Flag_of_the_People%27s_Republic_of_China.svg.png"></h2>
+        <img class="circuit-map" src="images/china.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-china">Selección de setup o estrategia:</label>
+          <select id="setup-select-china" onchange="mostrarContenido(this.value, 'china')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="china-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="china-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="china-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="china-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="japon" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Japón <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg"></h2>
+        <img class="circuit-map" src="images/japon.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-japon">Selección de setup o estrategia:</label>
+          <select id="setup-select-japon" onchange="mostrarContenido(this.value, 'japon')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="japon-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="japon-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="japon-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="japon-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="barein" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Baréin <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Bahrain.svg"></h2>
+        <img class="circuit-map" src="images/bahrain.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-barein">Selección de setup o estrategia:</label>
+          <select id="setup-select-barein" onchange="mostrarContenido(this.value, 'barein')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="barein-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="barein-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="barein-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="barein-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="arabia" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Arabia <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/800px-Flag_of_Saudi_Arabia.svg.png"></h2>
+        <img class="circuit-map" src="images/arabia.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-arabia">Selección de setup o estrategia:</label>
+          <select id="setup-select-arabia" onchange="mostrarContenido(this.value, 'arabia')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="arabia-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="arabia-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="arabia-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="arabia-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="miami" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Miami <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_the_United_States_%28Pantone%29.svg/960px-Flag_of_the_United_States_%28Pantone%29.svg.png"></h2>
+        <img class="circuit-map" src="images/miami.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-miami">Selección de setup o estrategia:</label>
+          <select id="setup-select-miami" onchange="mostrarContenido(this.value, 'miami')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="miami-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="miami-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="miami-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="miami-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="imola" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Imola <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/250px-Flag_of_Italy.svg.png"></h2>
+        <img class="circuit-map" src="images/imola.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-imola">Selección de setup o estrategia:</label>
+          <select id="setup-select-imola" onchange="mostrarContenido(this.value, 'imola')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="imola-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="imola-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="imola-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="imola-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="monaco" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Mónaco <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Flag_of_Monaco.svg/1200px-Flag_of_Monaco.svg.png"></h2>
+        <img class="circuit-map" src="images/monaco.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-monaco">Selección de setup o estrategia:</label>
+          <select id="setup-select-monaco" onchange="mostrarContenido(this.value, 'monaco')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="monaco-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="monaco-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="monaco-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="monaco-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="españa" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">España <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/250px-Bandera_de_Espa%C3%B1a.svg.png"></h2>
+        <img class="circuit-map" src="images/españa.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-españa">Selección de setup o estrategia:</label>
+          <select id="setup-select-españa" onchange="mostrarContenido(this.value, 'españa')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="españa-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="españa-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="españa-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="españa-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="canada" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Canadá <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg"></h2>
+        <img class="circuit-map" src="images/canada.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-canada">Selección de setup o estrategia:</label>
+          <select id="setup-select-canada" onchange="mostrarContenido(this.value, 'canada')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="canada-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="canada-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="canada-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="canada-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="austria" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Austria <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/1280px-Flag_of_Austria.svg.png"></h2>
+        <img class="circuit-map" src="images/austria.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-austria">Selección de setup o estrategia:</label>
+          <select id="setup-select-austria" onchange="mostrarContenido(this.value, 'austria')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="austria-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="austria-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="austria-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="austria-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="inglaterra" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Gran Bretaña <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Great_Britain_%281707%E2%80%931800%29.svg/250px-Flag_of_Great_Britain_%281707%E2%80%931800%29.svg.png"></h2>
+        <img class="circuit-map" src="images/inglaterra.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-inglaterra">Selección de setup o estrategia:</label>
+          <select id="setup-select-inglaterra" onchange="mostrarContenido(this.value, 'inglaterra')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="inglaterra-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="inglaterra-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="inglaterra-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="inglaterra-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="belgica" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Bélgica <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/800px-Flag_of_Belgium.svg.png"></h2>
+        <img class="circuit-map" src="images/belgica.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-belgica">Selección de setup o estrategia:</label>
+          <select id="setup-select-belgica" onchange="mostrarContenido(this.value, 'belgica')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="belgica-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="belgica-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="belgica-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="belgica-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="hungria" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Hungría <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Flag_of_Hungary.svg/250px-Flag_of_Hungary.svg.png"></h2>
+        <img class="circuit-map" src="images/hungria.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-hungria">Selección de setup o estrategia:</label>
+          <select id="setup-select-hungria" onchange="mostrarContenido(this.value, 'hungria')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="hungria-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="hungria-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="hungria-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="hungria-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="holanda" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Países Bajos <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/330px-Flag_of_the_Netherlands.svg.png"></h2>
+        <img class="circuit-map" src="images/holanda.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-holanda">Selección de setup o estrategia:</label>
+          <select id="setup-select-holanda" onchange="mostrarContenido(this.value, 'holanda')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="holanda-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="holanda-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="holanda-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="holanda-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="monza" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Monza <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/250px-Flag_of_Italy.svg.png"></h2>
+        <img class="circuit-map" src="images/italia.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-monza">Selección de setup o estrategia:</label>
+          <select id="setup-select-monza" onchange="mostrarContenido(this.value, 'monza')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="monza-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="monza-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="monza-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="monza-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="baku" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Azerbaiyán <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg"></h2>
+        <img class="circuit-map" src="images/baku.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-baku">Selección de setup o estrategia:</label>
+          <select id="setup-select-baku" onchange="mostrarContenido(this.value, 'baku')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="baku-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="baku-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="baku-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="baku-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="singapur" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Singapur <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/1200px-Flag_of_Singapore.svg.png"></h2>
+        <img class="circuit-map" src="images/singapur.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-singapur">Selección de setup o estrategia:</label>
+          <select id="setup-select-singapur" onchange="mostrarContenido(this.value, 'singapur')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="singapur-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="singapur-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="singapur-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="singapur-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="texas" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Texas <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_the_United_States_%28Pantone%29.svg/960px-Flag_of_the_United_States_%28Pantone%29.svg.png"></h2>
+        <img class="circuit-map" src="images/texas.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-texas">Selección de setup o estrategia:</label>
+          <select id="setup-select-texas" onchange="mostrarContenido(this.value, 'texas')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="texas-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="texas-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="texas-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="texas-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="mexico" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">México <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/250px-Flag_of_Mexico.svg.png"></h2>
+        <img class="circuit-map" src="images/mexico.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-mexico">Selección de setup o estrategia:</label>
+          <select id="setup-select-mexico" onchange="mostrarContenido(this.value, 'mexico')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="mexico-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="mexico-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="mexico-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="mexico-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="brasil" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Brasil <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/250px-Flag_of_Brazil.svg.png"></h2>
+        <img class="circuit-map" src="images/brasil.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-brasil">Selección de setup o estrategia:</label>
+          <select id="setup-select-brasil" onchange="mostrarContenido(this.value, 'brasil')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="brasil-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="brasil-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="brasil-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="brasil-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="vegas" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Las Vegas <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Flag_of_the_United_States_%28Pantone%29.svg/960px-Flag_of_the_United_States_%28Pantone%29.svg.png"></h2>
+        <img class="circuit-map" src="images/vegas.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-vegas">Selección de setup o estrategia:</label>
+          <select id="setup-select-vegas" onchange="mostrarContenido(this.value, 'vegas')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="vegas-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="vegas-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="vegas-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="vegas-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="catar" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Catar <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Qatar.svg/1200px-Flag_of_Qatar.svg.png"></h2>
+        <img class="circuit-map" src="images/catar.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-catar">Selección de setup o estrategia:</label>
+          <select id="setup-select-catar" onchange="mostrarContenido(this.value, 'catar')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="catar-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="catar-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="catar-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="catar-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="abu" class="circuit hidden">
+      <div class="left">
+        <h2 class="circuit-title">Abu Dabi <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/1200px-Flag_of_the_United_Arab_Emirates.svg.png"></h2>
+        <img class="circuit-map" src="images/abu.png">
+      </div>
+
+      <div class="right">
+        <div class="select-group">
+          <label for="setup-select-abu">Selección de setup o estrategia:</label>
+          <select id="setup-select-abu" onchange="mostrarContenido(this.value, 'abu')">
+            <option value="vuelta">Setup a una vuelta</option>
+            <option value="carrera">Setup de carrera</option>
+            <option value="lluvia">Setup de lluvia</option>
+            <option value="estrategia">Estrategia de carrera</option>
+          </select>
+        </div>
+
+        <div id="abu-vuelta" class="setup-content info">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="abu-carrera" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="abu-lluvia" class="setup-content info hidden">
+          <ul>
+          <li>Aerodinámica
+            <ul>
+              <li>Alerón delantero: XX</li>
+              <li>Alerón trasero: XX</li>
+            </ul>
+          </li>
+          <li>Transmisión
+            <ul>
+              <li>Diferencial aceleración: XX%</li>
+              <li>Diferencial deceleración: XX%</li>
+            </ul>
+          </li>
+          <li>Geometría de la suspensión
+            <ul>
+              <li>Caída delantera: -X,XX°</li>
+              <li>Caída trasera: -X,XX°</li>
+              <li>Divergencia delantera: X,XX°</li>
+              <li>Convergencia trasera: X,XX°</li>
+            </ul>
+          </li>
+          <li>Suspensión
+            <ul>
+              <li>Suspensión delantera: XX</li>
+              <li>Suspensión trasera: XX</li>
+              <li>Barra estabilizadora delantera: XX</li>
+              <li>Barra estabilizadora trasera: XX</li>
+              <li>Altura chasis delantera: XX</li>
+              <li>Altura chasis trasera: XX</li>
+            </ul>
+          </li>
+          <li>Frenos
+            <ul>
+              <li>Frenada delantera: XX%</li>
+              <li>Presión de frenos: XX%</li>
+            </ul>
+          </li>
+          <li>Neumáticos
+            <ul>
+              <li>Del. derecha: XX,X psi</li>
+              <li>Del. izquierda: XX,X psi</li>
+              <li>Tras. derecha: XX,X psi</li>
+              <li>Tras. izquierda: XX,X psi</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+        <div id="abu-estrategia" class="setup-content info hidden">
+          <ul>
+            <li>Carrera al 35%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Carrera al 50%
+              <ul>
+                <li>Desgaste por 10 vueltas:
+                  <ul>
+                    <li>Blandos:</li>
+                    <li>Medios:</li>
+                    <li>Duros:</li>
+                  </ul>
+                </li>
+                <li>Estrategia óptima:
+                  <ul>
+                    <li>2 paradas: Blando / Medio / Duro</li>
+                    <li>Tiempo en boxes: XXs (normal) / XXs (con VSC o SC)</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+  function mostrarContenido(tipo, circuito) {
+    const ids = ["vuelta", "carrera", "lluvia", "estrategia"];
+    ids.forEach(id => {
+      document.getElementById(`${circuito}-${id}`).classList.add("hidden");
+    });
+    document.getElementById(`${circuito}-${tipo}`).classList.remove("hidden");
+  }
+  function mostrarCircuito(circuitoId) {
+    var circuitos = document.querySelectorAll('.circuit');
+    circuitos.forEach(function(circuito) {
+      circuito.classList.add('hidden');
+    });
+    document.getElementById(circuitoId).classList.remove('hidden');
+  }
+  </script>
+</body>
+</html>

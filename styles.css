@@ -1,0 +1,260 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e10600;
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header h1 img {
+  height: 26px;
+}
+
+header .select-group {
+  justify-content: center;
+}
+
+header .select-group select {
+  background-color: #e10600;
+  color: white;
+}
+
+main {
+  padding: 25px;
+}
+
+.circuit {
+  display: flex;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #000;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.left {
+  flex: 1 1 300px;
+}
+
+.circuit-title {
+  display: flex;
+  align-items: center;
+  color: #e10600;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2.5rem;
+}
+
+.circuit-title img.flag {
+  width: 76px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.circuit-map {
+  margin-top: 10px;
+  max-width: 95%;
+  border-radius: 10px;
+}
+
+.right {
+  flex: 1;
+}
+
+.select-group {
+  display: flex;
+  align-items: center;
+}
+
+.select-group label {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 20px !important;
+}
+
+.select-group select {
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #e10600;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.right label,
+.right select {
+  display: block;
+  font-size: 16px;
+}
+
+.setup-content {
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 5px;
+}
+
+ul ul {
+  list-style-type: disc;
+  padding-left: 50px;
+}
+
+.info > ul > li {
+  color: white;
+  padding: 6px 8px;
+  border-radius: 6px;
+  margin-top: 14px;
+  font-weight: bold;
+  border: 2px solid #b71c1c;
+}
+
+.info > ul > li > ul {
+  margin-left: 20px;
+}
+
+.info > ul > li > ul > li {
+  padding: 3px 0;
+  color: white;
+}
+
+@media (max-width: 1500px) {
+  header {
+    padding: 8px 20px;
+  }
+
+  header h1 {
+    gap: 8px;
+  }
+
+  header h1 img {
+    height: 24px;
+  }
+
+  .circuit-title img.flag {
+    width: 60px;
+  }
+
+  .circuit-map {
+    margin-top: 50px;
+  }
+
+  .select-group label {
+    margin-right: 8px;
+    font-size: 18px !important;
+  }
+
+  .right label, .right select {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1335px) {
+  header {
+    padding: 8px;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+    margin-bottom: 0;
+  }
+
+  header h1 img {
+    height: 20px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .circuit {
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left, .right {
+    display: block;
+  }
+
+  .circuit-title {
+    font-size: 2rem;
+  }
+
+  .circuit-title img.flag {
+    width: 60px;
+  }
+
+  .circuit-map {
+    display: block;
+    margin: 0 auto;
+    max-width: 65%;
+  }
+
+  .select-group {
+    margin-top: 20px;
+  }
+
+  .select-group label {
+    margin-right: 10px;
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 0;
+    padding-bottom: 5px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header h1 img {
+    height: 18px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  .circuit-title {
+    font-size: 1.5rem;
+  }
+
+  .circuit-title img.flag {
+    width: 48px;
+  }
+
+  .circuit-map {
+    max-width: 90%;
+  }
+
+  ul {
+  font-size: 14px;
+  }
+
+  ul ul {
+  padding-left: 25px;
+  }
+}
